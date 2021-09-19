@@ -1,6 +1,7 @@
 html {
   scroll-margin-top: 6rem;
   scroll-behavior: smooth;
+  height: 100%;
 }
 
 .jumbotron {
