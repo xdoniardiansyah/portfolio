@@ -1,5 +1,5 @@
 .jumbotron {
-  padding-top: 2rem;
+  padding-top: 6rem;
   background-color: #e2edff;
 }
 
@@ -12,6 +12,6 @@ section {
 }
 
 html {
+  scroll-padding-top: 6rem;
   scroll-behavior: smooth;
-  scroll-margin-top: 60px;
 }
