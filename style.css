@@ -12,6 +12,6 @@ section {
 }
 
 html {
-  scroll-margin-top: 6rem;
+  scroll-padding-top: 6rem;
   scroll-behavior: smooth;
 }
