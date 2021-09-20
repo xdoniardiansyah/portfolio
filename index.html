@@ -145,20 +145,82 @@
         </div>
         <div class="row justify-content-center">
           <div class="col-md-6">
-            <form>
+            <!-- form -->
+            <form
+              action="https://formspree.io/f/xrgrjawa"
+              method="POST"
+              id="my-form"
+            >
+              <!-- alert pesan sukses -->
+              <div
+                class="alert alert-dismissible fade show d-none"
+                id="my-alert"
+                role="alert"
+              >
+                <p id="my-form-status">Thanks</p>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="alert"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <!-- <input type="hidden" name="_next" value="//site.io/thanks.html" /> -->
               <div class="mb-3">
-                <label for="name" class="form-label">Nama Lengkap</label>
-                <input type="text" class="form-control" id="name" aria-describedby="name" />
-                            <div class="mb-3">
-                <label for="email" class="form-label">Email</label>
-                <input type="email" class="form-control" id="email" aria-describedby="email" />
+                <label for="name" class="form-label">Full Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  aria-describedby="name"
+                  name="name"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label"
+                  >Email Address</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                  name="_replyto"
+                  required
+                />
+                <div id="emailHelp" class="form-text">
+                  We'll never share your email with anyone else.
                 </div>
-                <div class="mb-3">
-                  <label for="pesan" class="form-label">Pesan</label>
-                  <textarea class="form-control" id="pesan" rows="3"></textarea>
-                </div>
-              <button type="submit" class="btn btn-primary">Kirim</button>
+              </div>
+              <div class="mb-3">
+                <label for="pesan" class="form-label">Message</label>
+                <textarea
+                  class="form-control"
+                  id="pesan"
+                  rows="3"
+                  name="message"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary" id="my-btn-submit">
+                Send
+              </button>
+              <button
+                class="btn btn-success d-none"
+                id="my-btn-loading"
+                type="button"
+                disabled
+              >
+                <span
+                  class="spinner-border spinner-border-sm"
+                  role="status"
+                  aria-hidden="true"
+                ></span>
+                Loading...
+              </button>
             </form>
+            <!-- end form -->
           </div>
         </div>
       </div>
